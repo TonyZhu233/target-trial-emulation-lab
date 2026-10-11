@@ -1,0 +1,4 @@
+policy,risk_difference,maximum_weight,effective_sample_size,maximum_smd_after,changed_weights
+No winsorization,-0.03056528411,2.418589297,2047.58873,0.00140571087,0
+1st/99th percentiles,-0.03010779348,1.814205115,2057.424509,0.01399870254,43
+5th/95th percentiles,-0.02785504905,1.526930569,2073.61679,0.03965022984,215
