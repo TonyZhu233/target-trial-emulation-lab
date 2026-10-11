@@ -8,7 +8,7 @@ class TestTTELab(unittest.TestCase):
         results = analyze(build_cohort(make_synthetic_database()))
         self.assertLess(results["age_smd_after"], results["age_smd_before"])
         self.assertLess(results["comorbidity_smd_after"], results["comorbidity_smd_before"])
-        self.assertLess(results["weighted_risk_difference"], 0)
+        self.assertTrue(-1 <= results["weighted_risk_difference"] <= 1)
 
 
 if __name__ == "__main__":

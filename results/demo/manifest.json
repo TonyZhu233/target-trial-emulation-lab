@@ -1,0 +1,87 @@
+{
+  "data": "entirely synthetic; independent people; complete 180-day follow-up",
+  "config": {
+    "n": 3000,
+    "seed": 20260907,
+    "bootstrap": 1000,
+    "bootstrap_seed": 8675309,
+    "simulations": 100,
+    "simulation_seed": 20260908
+  },
+  "propensity_clip": [
+    0.01,
+    0.99
+  ],
+  "bootstrap_method": "patient-level pairs; refitted PS; 95% percentile; all scheduled fits required",
+  "smd_denominator": "fixed unweighted pooled population SD",
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.1",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.5"
+  },
+  "summary": {
+    "n": 2196.0,
+    "propensity_min_raw": 0.32341347429488354,
+    "propensity_max_raw": 0.8047530340397795,
+    "propensity_clipped_count": 0.0,
+    "weight_winsorized_count": 0.0,
+    "effective_sample_size": 2047.5887297490515,
+    "maximum_weight": 2.418589297405177,
+    "mean_weight": 1.0000503895466288,
+    "weight_p99": 1.8142051153264631,
+    "risk_A_crude": 0.07075064710957722,
+    "risk_A_weighted": 0.06234076212323993,
+    "ess_A": 1096.9901085580607,
+    "risk_B_crude": 0.0781099324975892,
+    "risk_B_weighted": 0.09290604623770035,
+    "ess_B": 951.1512008560029,
+    "crude_risk_difference": -0.007359285388011977,
+    "weighted_risk_difference": -0.03056528411446042,
+    "age_smd_before": 0.34558557702273307,
+    "age_smd_after": 0.0003950894083095117,
+    "comorbidity_smd_before": 0.42536980556211257,
+    "comorbidity_smd_after": 0.0014057108702629662
+  },
+  "oracle_risk_difference": -0.03362998347359492,
+  "simulation_summary": {
+    "scheduled": 100,
+    "successful": 100,
+    "failed": 0,
+    "crude_mean_error": 0.023266383206418557,
+    "crude_rmse": 0.024887625433702952,
+    "crude_mean_error_mcse": 0.0008880196570555157,
+    "weighted_mean_error": -0.002180589052214574,
+    "weighted_rmse": 0.009995900235244937,
+    "weighted_mean_error_mcse": 0.000980429986571712
+  },
+  "source_hash_normalization": "UTF-8 text with LF line endings (as committed by .gitattributes)",
+  "source_sha256": {
+    "src/core.py": "3aac459a1b3d193934767a1439a026277e7ba89efef396eff85fefd0c842f0d9",
+    "src/report.py": "65f53e8306c28f572b9d99f4cfb08f42c8362aa8e88c02a1238e4baf62383e53",
+    "src/run.py": "72d2438b801d01b14d31d975e63d1a09fc264dc7c3342080652315e37ff85f60",
+    "queries/build_cohort.sql": "362fd8984f3a82fa01aef727b3738d22028d71df165897dd19593110721b518d",
+    "PROTOCOL.md": "94a928d742f8e23655d99790b8c04544f277f28b4079155b06918c5eee647576"
+  },
+  "artifact_sha256": {
+    "cohort.csv": "6d9d3e52b0e2e0deb5330d15e991c86596b96af0d9ad47a8154e8a6680c8add4",
+    "cohort_flow.csv": "f7f0bdec406741e8f63aa48749149ab759277d4849a6c6306a5033ab0d6595a6",
+    "balance.csv": "3827ec13fc02d13f3db37dc13048ea8eccca54611f25414e74a00eb489b21441",
+    "descriptives.csv": "e7995c64dda1d25a2758ad75232312398471bfbc61767171dc5ab980a64c9383",
+    "effects.csv": "c60c15f83241b8820c2046fa3aa26851eae89ecdd9e569457a7bd772f5e7ec0a",
+    "bootstrap.csv": "829661d36340225560ae2af160b69143165051fe9ea8c1f863c612e6a7a5f8f6",
+    "sensitivity.csv": "75305c0f3affc1fd8aad48f707695fd93224d27980822b9bd75afaaa891ecff3",
+    "simulation_runs.csv": "5464d07a8744cd4aba14554d564ac565342fe4c2a5e2842840ef6bec01e2c7bb",
+    "source_patients.csv": "d029638989a24515fb0146b188df60eb53440985f8e08dd9bb794818467ddac8",
+    "source_index_exposures.csv": "7aab0272913a282faeeeb2c836ab83ed250a9ce7a9e5cde5eb383db5c717209d",
+    "source_outcomes.csv": "5e08895cb8095426fb1200396c138f955740fcc7f2c0b3a71df467353840c4a5",
+    "balance.svg": "f6c62eb6ba3182f049f7a0742ac3270170c74c2ddd3450322ca01a05f6545567",
+    "balance.png": "9b7b10dbf6cfb822bb18dfb0c2d4858b320ee61b28516f1a088eba89ca69fbf3",
+    "overlap_weights.svg": "3232041add81642c51cd4d381b51fb4752630b90fbfd27937b66d7595fd65088",
+    "overlap_weights.png": "2022b44d674be0f6f21a6b4fd76ef000c8fb8635659bbe6f395bcdbce821788f",
+    "effect.svg": "47b6f93c34f307754ea8b84c05411233280db80716dcb83d8c7b675aa2fe6eff",
+    "effect.png": "63ae444e9664c468154c0a094125aaa5c3592f1e5e774c5abd55b5f7a69dc7e4",
+    "REPORT.md": "637893df4581e3f376aec8d1e29a55680e1c11c60d0dae89150e40b97edf3f58"
+  }
+}
